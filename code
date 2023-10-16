@@ -1,0 +1,20 @@
+def find_largest(numbers):
+    largest = numbers[0]
+    for num in numbers[1:]:
+        if num > largest:
+            largest = num
+    return largest
+
+def find_smallest(numbers):
+    smallest = numbers[0]
+    for num in numbers[1:]:
+        if num < smallest:
+            smallest = num
+    return smallest
+
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30]
+largest = find_largest(numbers)
+smallest = find_smallest(numbers)
+
+print("The largest number is", largest)
+print("The smallest number is", smallest)
